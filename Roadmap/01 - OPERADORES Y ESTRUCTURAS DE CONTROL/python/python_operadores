@@ -1,0 +1,112 @@
+# operadores en python
+#operadores aritmeticos
+print(35+46)
+print(43-12)
+print(4+67)
+print(456/3)
+print(5//4)
+print(3**4)
+print(4^8)
+print(5%4)
+print("hola "+"python "+ "¿que tal?")
+print("hola "+str(5))
+
+# operadores de comparacion
+print(5<4)
+print(5>4)
+print(5!=4)
+print(5<=4)
+print(5>=4)
+print(5==4)
+
+# se comparan ordenaciones alfabeticas. tiene en cuenta si son mayusculas
+print("hola"<"python")
+print("hola">"python")
+print("hola"<="python")
+print("hola"!="python")
+print("hola">="python")
+print("hola"=="python")
+
+#operadores logicos
+print(3<4 and "hola">"python")
+print(3>4 or "hola"<"python")
+print(3>4 or "hola"<"python")
+print(3>4 and "hola"<"python")
+print(not(3>4))
+
+#operadores de asignacion
+my_number= 11 # asignacion
+print(my_number)
+my_number+=1#suma y asignacion
+print(my_number)
+my_number-=1 #resta y asignacion
+print(my_number)
+my_number*= 2#multiplicacion y asignacion
+print(my_number)
+my_number/= 2#division y asignacion
+print(my_number)
+my_number%= 2# modulo y asignacion
+print(my_number)
+my_number**= 1 # exponente y asignacion
+print(my_number)
+my_number//=1 # division entera y asignacion
+print(my_number)
+
+#operadores de identidad
+#my_new_number=45
+my_new_number=my_number
+print(f"my_new_number es {my_number is my_new_number}")
+print(f"my_new_number es {my_number is not my_new_number}")
+
+#operadores de pertenencia
+print(f"a in Daniel = {"a" in "Daniel"}")
+print(f"D not in Daniel = {"D" not in  "Daniel"}")
+
+#operadores bit
+
+a = 10#1010
+b =3#0011
+print(f"AND: 10 & 3 = {10 & 3}")#0010
+print(f"OR: 10 | 3 = {10 | 3}")#1011
+print(f"XOR: 10 ^ 3 = {10 ^ 3}") #1001
+print(f"NOT: ~10 = {~10 }")
+print(f"Desplazamiento a la derecha: 10 >> 2 ={10 >> 2}")#0010
+print(f"Desplazamiento a la izquierda: 10 << 2 ={10 << 2}")
+"""
+estructura de control
+"""
+#condicionales
+my_string= "Daniel"
+if my_string == ("Daniel"):
+    print("my_string es 'Daniel'")
+
+elif my_string == ("Dany"):
+    print("my_stringes 'Dany'")
+else:
+    print("my_string no es 'Daniel'")
+
+#iterativas
+
+for i in range(11):
+    print(i)
+
+
+i=0
+while i <= 10:
+    print(i)
+    i+=1
+
+#manejo de excepciones
+try:
+    print(10/0)
+except:
+    print(" se ha producido un error")
+
+finally:
+    print("ha finalizado el manejo de excepciones")
+#Dificultad extra
+
+for numero in range(10, 56):
+
+    if numero % 2 == 0 and numero != 16 and numero % 3 != 0:
+        print(numero)
