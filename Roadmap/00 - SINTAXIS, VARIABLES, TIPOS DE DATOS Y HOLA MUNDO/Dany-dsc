@@ -1,0 +1,32 @@
+#esto es un comentario en una sola linea
+# https://www.python.org
+
+"""
+esto 
+es un 
+comentario en
+varias lineas
+"""
+
+'''
+esto tambien
+es un
+comntario
+en varias lineas'''
+
+myvariable="mi variable"
+mi_constante="mi constante" #por convencion 
+
+my_int=5
+my_float=3.14
+my_bool=True
+my_other_bool=False
+my_text_string="mi cadena de texto"
+
+print("hola,python")
+
+print(my_int)
+print(my_float)
+print(my_bool)
+print(my_other_bool)
+print(my_text_string)
